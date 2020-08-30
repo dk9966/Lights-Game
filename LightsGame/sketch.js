@@ -69,7 +69,7 @@ function art()
 {
    fill(255)
    textSize(150)
-   text('Lights', 50, 200); 
+   text('Lights', 50, 170); 
 
    // textSize(40)
    // text('Grid Length', 330, 370);
@@ -81,11 +81,11 @@ function art()
    text('Show State', 50, 320);
 
    textSize(40)
-   text('Show Answer', 50, 520);
+   text('Show Answer', 50, 450);
 
    if(isDisplayAnswer){
       textSize(15)
-      text('Click until all numbers in the top right turn into 0!', 60, 630);
+      text('Click until all numbers in the top right turn into 0!', 60, 540);
    }
 }
    
@@ -127,7 +127,7 @@ function UI()
    })
 
    let answerDisplay = createCheckbox()
-   answerDisplay.position(140, 550)
+   answerDisplay.position(140, 480)
    answerDisplay.changed(() => {
       if(answerDisplay.checked()){
          isDisplayAnswer = true
@@ -138,7 +138,7 @@ function UI()
    })
 
    let resetButton = createButton('Reset System');
-   resetButton.position(500, 180);
+   resetButton.position(60, 220);
    resetButton.mousePressed(() => {
       init(gridLength, modulus)
    });

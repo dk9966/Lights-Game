@@ -28,8 +28,8 @@ class GridGame
 
         this.buttonSize = 50
         this.buttonSpace = 20
-        this.topLeftX = windowWidth/2 - (this.buttonSize + this.buttonSpace) * this.logicGrid.length/2  
-        this.topLeftY = windowHeight/2 - (this.buttonSize + this.buttonSpace) * this.logicGrid.length/2  
+        this.topLeftX = windowWidth/2 - (this.buttonSize + this.buttonSpace) * this.logicGrid.length/2 + 100 
+        this.topLeftY = windowHeight/2 - (this.buttonSize + this.buttonSpace) * this.logicGrid.length/2 + 50
         
         
         for (let i = 0; i < this.logicGrid.length; i++)
