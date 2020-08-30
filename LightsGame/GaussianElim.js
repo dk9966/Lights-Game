@@ -1,4 +1,4 @@
-function rref0(A)
+function rref0(A) //my own attempts at implementing rref with modulus
 {
     var rows = A.length;
     var columns = A[0].length;

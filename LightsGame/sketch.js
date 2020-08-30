@@ -36,8 +36,10 @@ function init(gridLength, modulus)
    
    let input = gridLogic.gridProfile
    console.table(input)
-    
-   let p = new GaussJordan.PrimeField(modulus);
+   //Gauss Jordan elimination code written by Ian Huang
+   //code translated from https://www.nayuki.io/page/gauss-jordan-elimination-over-any-field
+   //concept from this video https://youtu.be/oCHCD_-nhg4
+   let p = new GaussJordan.PrimeField(modulus); 
    let m = new GaussJordan.Matrix(input.length, input[0].length, p);
     
    for (let i = 0; i < input.length; i++)
