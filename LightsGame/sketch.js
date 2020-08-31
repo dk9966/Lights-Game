@@ -68,8 +68,8 @@ function draw()
 function art()
 {
    fill(255)
-   textSize(150)
-   text('Lights', 50, 170); 
+   textSize(120)
+   text('Lights Out', 50, 130); 
 
    // textSize(40)
    // text('Grid Length', 330, 370);
@@ -138,7 +138,7 @@ function UI()
    })
 
    let resetButton = createButton('Reset System');
-   resetButton.position(60, 220);
+   resetButton.position(60, 200);
    resetButton.mousePressed(() => {
       init(gridLength, modulus)
    });
